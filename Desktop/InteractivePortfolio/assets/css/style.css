@@ -1,3 +1,9 @@
+:root {
+    --teal: rgba(1,168,158,255);
+    --black: rgb(0, 0, 0);
+
+
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,50 +11,74 @@
 }
 
  body {
-    color: rgb(31, 138, 138);
+    color: teal;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+footer {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
 header {
     padding: 25px 25px;
-    background-color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url(../images/keyboard.jpg.);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100%;
+    z-index: 9999;
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: #ffffff;
+    font-weight: bolder;
+    font-size: 50px;
+    color: black;
     margin: 0;
     display: inline;
 }
 
 header a {
-    color: rgb(31, 138, 138);
+    color: black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
 }
 
 header nav {
-    float: right;
-    margin: 7px 0;
+   margin: 5px 0;
 }
 
-header nav ul li {
-    float: right;
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: right;
+    list-style: none;
 }
 
 header nav ul li a {
     margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
+    font-weight:bold;
+    font-size: 25px;
 }
 
 .hero {
-    background-image: url(../images/bluecode.jpg);
-    background-size: cover;
+    background-image: url(../images/keyboard.jpg);
+    background-size:auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
-    height: 600px;
+    height: 470px;
 }
 
 .hero img {
@@ -59,81 +89,114 @@ header nav ul li a {
     margin: auto;
 }
 
-.intro {
-    text-align:center;
-    line-height: 1.4;
-    background: rgb(44, 43, 43);
-    padding: 25px 0 50px 0;
+.hero-cta {
+    text-align: right;
+    color: black;
+    font-size: 20px;
+    list-style: none;
+    background: rgba(1,168,158,255);
+    position: sticky;
 }
 
-.intro h2 {
+.hero-cta h3 {
+    color: black;
+}
+
+
+.intro {
+    text-align: left;
+    line-height: 1.4;
+    background: black;
+    padding: 25px 65px 50px 0;
+    display: inline-block;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.intro h3 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
 }
 
 .intro p {
-    color: rgb(31, 138, 138);
+    color: teal;
     font-size: 25px;
     margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: right;
 }
 
 .work {
     text-align: left;
-    background: rgb(31, 138, 138);
-    padding: 25px 0 25px 10px;
+    background: black;
+    padding: 25px -50px 25px 10px;
+    display: inline-block;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
 .work h3 {
-    color: rgb(44, 43, 43);
+    color: teal;
     font-weight: bold;
     font-size: 60px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
 }
 
 .work p {
-    color: rgb(44, 43, 43);
+    color: teal;
     font-size: 25px;
     margin: auto;
-}
-
-.certs {
-    text-align: left;
-    background: rgb(44, 43, 43);
-    padding: 25px 0 25px 10px;
-}
-
-.certs h4 {
-    color: rgb(31, 138, 138);
-    font-weight: bold;
-    font-size: 60px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.certs p {
-    color: rgb(31, 138, 138);
-    font-size: 25px;
-    margin: auto;
-
+    display: inline-block;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: right;
 }
 
 .contact {
-    text-align: right;
+    text-align: left;
+    background: black;
     padding: 25px 20px 25px 10px;
-    background-image: url(../images/keyboard.jpg);
-    background-position: center;
+    display: inline-block;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
-.contact h5 {
-    color: rgb(44, 43, 43);
+.contact h3 {
+    color: teal;
     font-weight: bold;
     font-size: 60px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: inline-block;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
 .contact p {
-    color: rgb(44, 43, 43);
+    color: teal;
     font-size: 25px;
     margin: auto;
+    display: inline-block;
+    position: left;
 }
 
+.line {
+    border: 2px solid;
+    display: inline-block;
+    color: teal;
+}
