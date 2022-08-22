@@ -13,10 +13,10 @@
     "type": "git",
     "url": "https://hcuadro2326.github.io/teamProfileGenerator/"
   },
-  "author": "Nicole Wallace",
+  "author": "Hector Cuadro",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nicolewallace09/team-profile-generator/issues"
+    "url": "https://github.com/hcuadro2326/teamProfileGenerator/issues"
   },
   "homepage": "https://github.com/nicolewallace09/team-profile-generator#readme",
   "devDependencies": {
