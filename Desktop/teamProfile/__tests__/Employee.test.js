@@ -1,42 +1,23 @@
-// using Employee constructor 
-const Employee = require('../lib/Employee');
+// using Engineer constructor 
+const Engineer = require('../lib/Engineer');
 
-// creates employee object 
-test('creates an employee object', () => {
-    const employee = new Employee('Hector', 25 ,'cuadro.bebo2326@gmail.com');
-
-    expect(employee.name).toEqual(expect.any(String));
-    expect(employee.id).toEqual(expect.any(Number));
-    expect(employee.email).toEqual(expect.any(String));
+// creating engineer object  
+test('creates an Engineer object', () => {
+    const engineer = new Engineer('Hector', 25 ,'hectorcuadro5555');
+    
+    expect(engineer.github) .toEqual(expect.any(String));
 });
 
-// gets id from getId() 
-test('gets employee name', () => {
-    const employee = new Employee('Hector', 25 ,'cuadro.bebo2326@gmail.com');
+// gets github from getGithub()
+test('gets engineer github value', () => {
+    const engineer = new Engineer('Hector', 25 ,'cuadro.bebo2326@gmail.com', 'hectorcuadro5555');
 
-    expect(employee.getName()).toEqual(expect.any(String));
+    expect(engineer.getGithub()).toEqual(expect.stringContaining(engineer.github.toString()));
 });
 
-// gets id from getId() 
-test('gets employee ID', () => {
-    const employee = new Employee('Hector', 25 ,'cuadro.bebo2326@gmail.com');
-
-    expect(employee.getId()).toEqual(expect.any(Number));
-});
-
-// gets emails from getEmail()
-test('gets employee email', () => {
-    const employee = new Employee('Hector', 25 ,'cuadro.bebo2326@gmail.com');
-
-    expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()));
-});
-
-// gets role from getRole()
+// gets role from getRole() 
 test('gets role of employee', () => {
-    const employee = new Employee('Hector', 25 ,'cuadro.bebo2326@gmail.com');
+    const engineer = new Engineer('Hector', 25 ,'cuadro.bebo2326@gmail.com', 'hectorcuadro5555');
 
-    expect(employee.getRole()).toEqual("Employee");
-}); 
-
-
-
+    expect(engineer.getRole()).toEqual("Engineer");
+});
