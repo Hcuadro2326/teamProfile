@@ -1,23 +1,40 @@
-// using Engineer constructor 
-const Engineer = require('../lib/Engineer');
+// using Employee constructor 
+const Employee = require('../lib/Employee');
 
-// creating engineer object  
-test('creates an Engineer object', () => {
-    const engineer = new Engineer('Hector', 25 ,'hectorcuadro5555');
-    
-    expect(engineer.github) .toEqual(expect.any(String));
+// creates employee object 
+test('creates an employee object', () => {
+    const employee = new Employee('Hector', 25 ,'cuadro.bebo2326@gmail.com');
+
+    expect(employee.name).toEqual(expect.any(String));
+    expect(employee.id).toEqual(expect.any(Number));
+    expect(employee.email).toEqual(expect.any(String));
 });
 
-// gets github from getGithub()
-test('gets engineer github value', () => {
-    const engineer = new Engineer('Hector', 25 ,'cuadro.bebo2326@gmail.com', 'hectorcuadro5555');
+// gets id from getId() 
+test('gets employee name', () => {
+    const employee = new Employee('Hector', 25 ,'cuadro.bebo2326@gmail.com');
 
-    expect(engineer.getGithub()).toEqual(expect.stringContaining(engineer.github.toString()));
+    expect(employee.getName()).toEqual(expect.any(String));
 });
 
-// gets role from getRole() 
+// gets id from getId() 
+test('gets employee ID', () => {
+    const employee = new Employee('Hector', 25 ,'cuadro.bebo2326@gmail.com');
+
+    expect(employee.getId()).toEqual(expect.any(Number));
+});
+
+// gets emails from getEmail()
+test('gets employee email', () => {
+    const employee = new Employee('Hector', 25 ,'cuadro.bebo2326@gmail.com');
+
+    expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()));
+});
+
+// gets role from getRole()
 test('gets role of employee', () => {
-    const engineer = new Engineer('Hector', 25 ,'cuadro.bebo2326@gmail.com', 'hectorcuadro5555');
+    const employee = new Employee('Hector', 25 ,'cuadro.bebo2326@gmail.com');
 
-    expect(engineer.getRole()).toEqual("Engineer");
-});
+    expect(employee.getRole()).toEqual("Employee");
+}); 
+
