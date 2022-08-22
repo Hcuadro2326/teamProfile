@@ -17,8 +17,6 @@ The user should clone the repository from GitHub and download Node. This applica
 
 ## Usage 
 Use inquirer from your command line to answer questions about your project.
-View walk through video here - [Screencastify](https://drive.google.com/file/d/1tWZNaLaSKDgV-UohblVVEdnwex9nPzDj/view)<br>
-<img src="./assets/image/samplepage.png">
 
 ## License 
 This project is license under MIT
@@ -30,4 +28,4 @@ Contributors should read the installation section.
 Run `npm test` to run Jest for tests on constructors. 
 
 ## Questions
-If you have any questions about this projects, please contact me directly at nicole.elisaw@gmail.com. You can view more of my projects at https://github.com/nicolewallace09.
+If you have any questions about this projects, please contact me directly at cuadro.bebo2326@gmail.com. You can view more of my projects at https://github.com/Hcuadro2326.
